@@ -17,11 +17,13 @@ def css(filename):
 
 @get('/')
 def index():
-    return b.template('html/paint.html')
+    return b.template('paint.html')
 
 
+# def main():
+#     run(host='0.0.0.0', port=sys.argv[1])
 def main():
-    run(host='0.0.0.0', port=sys.argv[1])
+    run(host='localhost', port=7000)
 
 
 if __name__ == '__main__':
