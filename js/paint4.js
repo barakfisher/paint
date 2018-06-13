@@ -112,7 +112,6 @@ function getItemNumber(str) {
 }
 
 function paint(event) {
-    console.log("mousemove");
     canvasDimentions.xMin = myCanvas.getClientRects()[0].x;
     canvasDimentions.xMax = myCanvas.getClientRects()[0].x + myCanvas.getClientRects()[0].width;
     canvasDimentions.yMin = myCanvas.getClientRects()[0].y;
@@ -127,8 +126,8 @@ function paint(event) {
 
 function createColorDiv() {
     var newColorDiv = document.createElement("div");
-    // newColorDiv.style.left = event.clientX - canvasDimentions.xMin - myTool.brushSize / 2;
-    // newColorDiv.style.top = event.clientY - canvasDimentions.yMin - myTool.brushSize / 2;
+    newColorDiv.style.left = event.clientX - canvasDimentions.xMin - myTool.brushSize / 2;
+    newColorDiv.style.top = event.clientY - canvasDimentions.yMin - myTool.brushSize / 2;
     newColorDiv.classList.add("color", colorArr[myTool.brushColorNumber - 1]);
     newColorDiv.style.width = myTool.brushSize;
     newColorDiv.style.height = myTool.brushSize;
