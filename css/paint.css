@@ -1,0 +1,35 @@
+.color{
+    border-radius: 100%;
+    position: absolute;
+}
+
+.black{
+    background-color: black;
+}
+.gray{
+    background-color: gray;
+}
+.pink{ 
+    background-color:pink;
+}
+.blue{
+    background-color:blue;
+}
+.green{
+    background-color:green;
+}
+.yellow{
+    background-color:yellow;
+}
+.red{
+    background-color:red;
+}
+.purple{
+    background-color:purple;
+}
+.white{
+    background-color:white;
+}
+.orange{
+    background-color:orange;
+}
