@@ -141,3 +141,5 @@ function reloadPage() {
 function changeBrushSize() {
     myTool.brushSize = brushSizeContainer.value;
 }
+
+console.log("a")

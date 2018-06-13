@@ -18,6 +18,7 @@ def css(filename):
     return b.static_file(filename, root="css")
 
 
+
 @get('/')
 def index():
     return b.template('paint.html')
